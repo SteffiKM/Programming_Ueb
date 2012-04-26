@@ -1,3 +1,5 @@
+#include "SuperString.h"
+
 #pragma once
 class Reader
 {
@@ -5,7 +7,10 @@ public:
 	Reader(void);
 	~Reader(void);
 
-	char* getGenom();
-	char* getPattern(int index);
+	SuperString* getGenom();
+	SuperString* getPattern(int index);
+
+private:
+	SuperString* readFile(char* filePath);
 };
 
