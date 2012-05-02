@@ -1,7 +1,6 @@
 #include "StdAfx.h"
 #include "SuperString.h"
-#include "SearchAlgorithm.h"
-
+#include "AlgorithmSearch.h"
 
 
 SuperString::SuperString(char *string, int length)
@@ -9,7 +8,6 @@ SuperString::SuperString(char *string, int length)
 	this->string = string;
 	this->length = length;
 
-	SearchAlgorithm *searchAlgo = new SimpleSearch();
 }
 
 
@@ -25,6 +23,6 @@ int SuperString::getLength(void) {
 	return this->length;
 }
 
-int SuperString::find(SuperString *needle) {
-	return searchAlgo->search(this->string, needle->string);
+void SuperString::print(){
+	cout << this->string;
 }

@@ -41,10 +41,19 @@ SuperString* Reader::readFile(char* filePath){
 
 
 SuperString* Reader::getGenom(){
-	
 	return readFile(genomFilePath);
-	//return "qwertzuiopasdfghjklyxcvbnmqwtzui";
+}
 
+SuperString* Reader::getDummyGenom(int index){
+	SuperString *result = NULL;
+	if (index == 0)
+		result = new SuperString("qwertzuiopasdfghjklyxcvbnmqwtzui", 32);
+	else if (index == 1)
+		result = new SuperString("GGGGGGAGTGGGGGGGAGTAAGGGTTTTAGTT", 32);
+	else if (index == 2)
+		result = new SuperString("AGTAGTAGTAGTAGTAGTAGTAGTAGTAGTAGT", 33);
+
+	return result;
 }
 
 SuperString* Reader::getPattern(int index){
@@ -53,8 +62,8 @@ SuperString* Reader::getPattern(int index){
 		result = new SuperString("FOO", 3);
 	else if (index == 1)
 		result = new SuperString("BAR", 3);
+	else if (index == 2)
+		result = new SuperString("AGT", 3);
 
 	return result;
 }
-
-

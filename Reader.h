@@ -8,6 +8,7 @@ public:
 	~Reader(void);
 
 	SuperString* getGenom();
+	SuperString* getDummyGenom(int index);
 	SuperString* getPattern(int index);
 
 private:
