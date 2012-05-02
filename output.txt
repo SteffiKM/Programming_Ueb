@@ -1,0 +1,21 @@
+
+dummygenom0, pattern2
+Nothing found.
+
+dummygenom1, pattern2
+OccString: AGT @ 6
+OccString: AGT @ 28
+OccString: AGT @ 16
+
+dummygenom2, pattern2
+OccString: AGT @ 0
+OccString: AGT @ 30
+OccString: AGT @ 27
+OccString: AGT @ 24
+OccString: AGT @ 21
+OccString: AGT @ 18
+OccString: AGT @ 15
+OccString: AGT @ 12
+OccString: AGT @ 9
+OccString: AGT @ 6
+OccString: AGT @ 3
